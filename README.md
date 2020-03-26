@@ -1,11 +1,10 @@
-# Django + Caver-js using Django Compress
+# Django + Caver-js using Django Compressor
 
 ```
 .
 └── klaytnexample
     ├── compress
     │   └── script.js
-    ├── db.sqlite3
     ├── home
     │   └── html
     │       └── template.html
@@ -16,7 +15,6 @@
     │   └── wsgi.py
     ├── manage.py
     ├── package.json
-    ├── package-lock.json
     ├── requirements.txt
     └── test
         ├── admin.py
