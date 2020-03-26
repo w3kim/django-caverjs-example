@@ -36,9 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'compressor',
-    'compressor_toolkit',
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
@@ -120,12 +118,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_FINDERS = []
 
 # Compressor 
-STATICFILES_FINDERS += (
-    'compressor.finders.CompressorFinder',
+INSTALLED_APPS += (
+    'compressor',
+    'compressor_toolkit'
 )
+
+STATICFILES_FINDERS = [
+    'compressor.finders.CompressorFinder',
+]
 
 COMPRESS_CSS_FILTERS = [
     'compressor.filters.css_default.CssAbsoluteFilter',
