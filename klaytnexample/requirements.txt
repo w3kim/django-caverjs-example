@@ -1,0 +1,9 @@
+Django==2.2.11
+django-appconf==1.0.3
+django-compressor==2.4
+django-compressor-toolkit==0.6.0
+pytz==2019.3
+rcssmin==1.0.6
+rjsmin==1.1.0
+six==1.14.0
+sqlparse==0.3.1

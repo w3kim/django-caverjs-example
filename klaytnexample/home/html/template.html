@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <title>Django + Node + Caver-js</title>
+    {% load compress %}
+    {% compress js %}
+    <script type="module" src="/static/script.js"></script>
+    {% endcompress %}
+</head>
+
+<body>
+    <h1>Django + Node + Caver-js</h1>
+    <h2>Current Block Number: <span id="block-number"></span></h2>
+</body>
+
+</html>
